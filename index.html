@@ -50,12 +50,12 @@
 
         <section class="main-container">
             <form>
-                <input type="text" placeholder="Title">
-                <textarea rows="5" placeholder="Description"></textarea>
-                <input class="btn-load-image js-file-field" type="file" accept="image/*" capture="camera">
-                <!-- <input class="btn-load-image js-file-field" type="file" placeholder="Image"> -->
+                {% csrf_token %}
+                <textarea id="id_message" name="message" rows="5" placeholder="Wat is uw tip?"></textarea>
+                <input name="docfile" id="id_docfile" class="btn-load-image js-file-field" type="file" accept="image/*" capture="camera">
                 <article class="image-container"></article>
                 <button class="btn btn-positive btn-block">Send Tip</button>
+                <p class="error-message">{{ form.errors }}</p>
             </form>
         </section>
 
