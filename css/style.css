@@ -1,0 +1,15 @@
+/* line 3, style.scss */
+.main-container {
+  margin-top: 44px;
+  padding: 10px;
+}
+
+/* line 10, style.scss */
+.image-container img {
+  width: 100%;
+}
+
+/* line 15, style.scss */
+.btn-load-image {
+  padding: 10px 5px;
+}

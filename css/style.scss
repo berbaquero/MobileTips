@@ -1,0 +1,17 @@
+$container-top: 44px;
+
+.main-container {
+	margin-top: $container-top;
+	padding: 10px;
+}
+
+.image-container {
+
+	img {
+		width: 100%;
+	}
+}
+
+.btn-load-image {
+	padding: 10px 5px;
+}
