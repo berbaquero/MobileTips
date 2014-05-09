@@ -15,3 +15,11 @@ $container-top: 44px;
 .btn-load-image {
 	padding: 10px 5px;
 }
+
+.form-hidden {
+	display: none;
+
+	&.show {
+		display: block;
+	}
+}

@@ -13,3 +13,12 @@
 .btn-load-image {
   padding: 10px 5px;
 }
+
+/* line 19, style.scss */
+.form-hidden {
+  display: none;
+}
+/* line 22, style.scss */
+.form-hidden.show {
+  display: block;
+}

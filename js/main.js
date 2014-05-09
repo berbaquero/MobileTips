@@ -9,9 +9,14 @@
 		Field: {
 			image: $(".js-file-field")
 		},
+		Forms: {
+			user: $(".form-user")
+		},
 		Buttons: {
 			openModal: $(".btn-open-modal-info"),
-			closeModal: $(".btn-close-modal-info")
+			closeModal: $(".btn-close-modal-info"),
+			submitTip: $(".btn-send-tip"),
+			submitInfo: $(".btn-submit-info")
 		}
 	};
 
@@ -24,8 +29,13 @@
 		View.Modal.info.addClass("active");
 	});
 
-	View.Buttons.closeModal.on("click", function(e){
+	View.Buttons.closeModal.on("click", function(e) {
 		View.Modal.info.removeClass("active");
+	});
+
+	View.Buttons.submitTip.on("click", function(e) {
+		e.preventDefault();
+		View.Forms.user.addClass("show");
 	});
 
 	var readImageFile = function(file) {
